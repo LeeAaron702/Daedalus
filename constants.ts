@@ -1,5 +1,5 @@
 import { 
-  Code, ImageIcon, LayoutDashboard, MessageSquare, Music, VideoIcon, Image, MailQuestion , BookOpen , PencilRuler , MonitorUp , PlusSquare , Mic  
+  Code, ImageIcon, LayoutDashboard, MessageSquare, Music, VideoIcon, MailQuestion , BookOpen , PencilRuler , MonitorUp , PlusSquare , Mic  
 } from "lucide-react";
 export const MAX_FREE_COUNTS = 5;
 export const tools = [

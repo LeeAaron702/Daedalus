@@ -6,58 +6,95 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
-import { ImageIcon, LayoutDashboard, MessageSquare, Music, VideoIcon, Code, Settings } from "../node_modules/lucide-react";
 
 const monsterrat = Montserrat({ weight: "600", subsets: ["latin"] });
 import {usePathname} from "next/navigation";
 import { FreeCounter } from "./free-counter";
+import { 
+  Code, ImageIcon, Settings, LayoutDashboard, MessageSquare, Music, VideoIcon, MailQuestion , BookOpen , PencilRuler , MonitorUp , PlusSquare , Mic  
+} from "lucide-react";
 
-import { tools as routes } from "@/constants";
 
-
-// const routes = [
-//   {
-//     label: "Dashboard",
-//     icon: LayoutDashboard,
-//     href: "/dashboard",
-//     color: "text-sky-500",
-//   },
-//   {
-//     label: "Conversation",
-//     icon: MessageSquare,
-//     href: "/conversation",
-//     color: "text-teal-300",
-//   },
-//   {
-//     label: "Image Generation",
-//     icon: ImageIcon,
-//     href: "/image",
-//     color: "text-blue-500",
-//   },
-//   {
-//     label: "Video Generation",
-//     icon: VideoIcon,
-//     href: "/video",
-//     color: "text-orange-600",
-//   },
-//   {
-//     label: "Music Generation",
-//     icon: Music,
-//     href: "/music",
-//     color: "text-emerald-400",
-//   },
-//   {
-//     label: "Code Generation",
-//     icon: Code,
-//     href: "/code",
-//     color: "text-red-700",
-//   },
-//   {
-//     label: "Settings",
-//     icon: Settings,
-//     href: "/settings",
-//   },
-// ];
+const routes = [
+  {
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    href: "/dashboard",
+    color: "text-sky-500",
+  },
+  {
+    label: "Conversation",
+    icon: MessageSquare,
+    href: "/conversation",
+    color: "text-teal-300",
+  },
+  {
+    label: "Image Generation",
+    icon: ImageIcon,
+    href: "/image",
+    color: "text-blue-500",
+  },
+  {
+    label: "Video Generation",
+    icon: VideoIcon,
+    href: "/video",
+    color: "text-orange-600",
+  },
+  {
+    label: "Music Generation",
+    icon: Music,
+    href: "/music",
+    color: "text-emerald-400",
+  },
+  {
+    label: "Code Generation",
+    icon: Code,
+    href: "/code",
+    color: "text-red-700",
+  },
+  {
+    label: 'Cover Letter Generator',
+    icon: MailQuestion,
+    color: "text-blue-600",
+    href: '/cover-letter',
+  },
+  {
+    label: 'Recipe Generation',
+    icon: BookOpen,
+    color: "text-yellow-700",
+    href: '/recipe',
+  },
+  {
+    label: 'Anime Generation',
+    icon: PencilRuler,
+    color: "text-red-700",
+    href: '/anime',
+  },
+  {
+    label: 'Image Restoration',
+    icon: MonitorUp ,
+    color: "text-teal-700",
+    href: '/restore',
+  },
+  {
+    label: 'Super Resolution',
+    icon: PlusSquare,
+    color: "text-violet-500",
+    href: '/resolution',
+  },
+  {
+    label: 'Speech to Text',
+    icon: Mic,
+    color: "text-gray-700",
+    href: '/speech-to-text',
+  },
+  {
+    label: "Settings",
+    icon: Settings,
+    href: "/settings",
+  },
+  
+];
 
 interface SidebarProps {
   apiLimitCount: number;
