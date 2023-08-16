@@ -58,41 +58,41 @@ const routes = [
     color: "text-blue-600",
     href: '/cover-letter',
   },
-  {
-    label: 'Recipe Generation',
-    icon: BookOpen,
-    color: "text-yellow-700",
-    href: '/recipe',
-  },
-  {
-    label: 'Anime Generation',
-    icon: PencilRuler,
-    color: "text-red-700",
-    href: '/anime',
-  },
-  {
-    label: 'Image Restoration',
-    icon: MonitorUp ,
-    color: "text-teal-700",
-    href: '/restore',
-  },
-  {
-    label: 'Super Resolution',
-    icon: PlusSquare,
-    color: "text-violet-500",
-    href: '/resolution',
-  },
-  {
-    label: 'Speech to Text',
-    icon: Mic,
-    color: "text-gray-700",
-    href: '/speech-to-text',
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
-  },
+  // {
+  //   label: 'Recipe Generation',
+  //   icon: BookOpen,
+  //   color: "text-yellow-700",
+  //   href: '/recipe',
+  // },
+  // {
+  //   label: 'Anime Generation',
+  //   icon: PencilRuler,
+  //   color: "text-red-700",
+  //   href: '/anime',
+  // },
+  // {
+  //   label: 'Image Restoration',
+  //   icon: MonitorUp ,
+  //   color: "text-teal-700",
+  //   href: '/restore',
+  // },
+  // {
+  //   label: 'Super Resolution',
+  //   icon: PlusSquare,
+  //   color: "text-violet-500",
+  //   href: '/resolution',
+  // },
+  // {
+  //   label: 'Speech to Text',
+  //   icon: Mic,
+  //   color: "text-gray-700",
+  //   href: '/speech-to-text',
+  // },
+  // {
+  //   label: "Settings",
+  //   icon: Settings,
+  //   href: "/settings",
+  // },
   
 ];
 
