@@ -64,22 +64,28 @@ Sincerely,
 
 `;
 
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: prompt,
-      max_tokens: 500, // You can adjust this value based on your needs.
-      temperature: .8,
+    // const response = await openai.createCompletion({
+    //   model: "text-davinci-003",
+    //   prompt: prompt,
+    //   max_tokens: 500, // You can adjust this value based on your needs.
+    //   temperature: .8,
+    // });
+    const response = await openai.createChatCompletion({
+      messages: [{ role: "system", content: prompt }],
+      model: "gpt-4",
     });
+  
 
     if (!isPro) {
       await increaseApiLimit();
     }
     
-    if (!response.data || !response.data.choices || !response.data.choices[0] || !response.data.choices[0].text) {
-      throw new Error("Invalid response from OpenAI");
-    }
+    // if (!response.data || !response.data.choices || !response.data.choices[0] || !response.data.choices[0].text) {
+    //   throw new Error("Invalid response from OpenAI");
+    // }
     
-    const coverLetter = response.data.choices[0].text.trim();
+    const coverLetter = response.data.choices[0].message.content;
+
 
     return NextResponse.json({ coverLetter });
   } catch (error) {

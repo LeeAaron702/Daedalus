@@ -81,8 +81,8 @@ const ConverLetterGeneratorPage = () => {
   return (
     <div>
       <Heading
-        title="CoverLetter Generator"
-        description="Our most advanced cover letter generator."
+        title="Cover Letter Generator"
+        description="Our most advanced cover letter generator utilizing GPT-4 and the latest in prompt engineering."
         icon={MessageSquare}
         iconColor="text-teal-300"
         bgColor="bg-teal-500/10"
