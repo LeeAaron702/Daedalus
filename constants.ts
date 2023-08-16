@@ -3,39 +3,18 @@ import {
 } from "lucide-react";
 export const MAX_FREE_COUNTS = 5;
 export const tools = [
-  {
-    label: "Dashboard",
-    icon: LayoutDashboard,
-    href: "/dashboard",
-    color: "text-sky-500",
-  },
-  {
-    label: 'Conversation',
-    icon: MessageSquare,
-    href: '/conversation',
+  // {
+    //   label: "Dashboard",
+    //   icon: LayoutDashboard,
+    //   href: "/dashboard",
+    //   color: "text-sky-500",
+    // },
+    {
+      label: 'Conversation',
+      icon: MessageSquare,
+      href: '/conversation',
     color:"text-teal-300",
     bgColor:"bg-teal-500/10",
-  },
-  {
-    label: 'Music Generation',
-    icon: Music,
-    href: '/music',
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-  },
-  {
-    label: 'Image Generation',
-    icon: ImageIcon,
-    href: '/image',
-    color: "text-blue-500",
-    bgColor: "bg-blue-700/10",
-  },
-  {
-    label: 'Video Generation',
-    icon: VideoIcon,
-    color: "text-orange-600",
-    bgColor: "bg-orange-600/10",
-    href: '/video',
   },
   {
     label: 'Code Generation',
@@ -50,6 +29,27 @@ export const tools = [
     color: "text-blue-600",
     bgColor: "bg-blue-700/10",
     href: '/cover-letter',
+  },
+  {
+    label: 'Image Generation',
+    icon: ImageIcon,
+    href: '/image',
+    color: "text-blue-500",
+    bgColor: "bg-blue-700/10",
+  },
+  {
+    label: 'Music Generation',
+    icon: Music,
+    href: '/music',
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-500/10",
+  },
+  {
+    label: 'Video Generation',
+    icon: VideoIcon,
+    color: "text-orange-600",
+    bgColor: "bg-orange-600/10",
+    href: '/video',
   },
   // {
   //   label: 'Recipe Generation',

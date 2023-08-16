@@ -29,24 +29,6 @@ const routes = [
     color: "text-teal-300",
   },
   {
-    label: "Image Generation",
-    icon: ImageIcon,
-    href: "/image",
-    color: "text-blue-500",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    href: "/video",
-    color: "text-orange-600",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    href: "/music",
-    color: "text-emerald-400",
-  },
-  {
     label: "Code Generation",
     icon: Code,
     href: "/code",
@@ -57,6 +39,24 @@ const routes = [
     icon: MailQuestion,
     color: "text-blue-600",
     href: '/cover-letter',
+  },
+  {
+    label: "Image Generation",
+    icon: ImageIcon,
+    href: "/image",
+    color: "text-blue-500",
+  },
+  {
+    label: "Music Generation",
+    icon: Music,
+    href: "/music",
+    color: "text-emerald-400",
+  },
+  {
+    label: "Video Generation",
+    icon: VideoIcon,
+    href: "/video",
+    color: "text-orange-600",
   },
   // {
   //   label: 'Recipe Generation',
