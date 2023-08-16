@@ -6,43 +6,9 @@ import { cn } from "@/lib/utils"
 import {ArrowRight, Code, ImageIcon, MessageSquare, Music, VideoIcon} from "lucide-react"
 import { useRouter } from "next/navigation"
 
-const tools = [
-  {
-    label: "Converstaion",
-    icon: MessageSquare,
-    color: "text-sky-500",
-    bgColor: "bg-violet-500/10",
-    href: "/conversation"
-  },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-blue-500",
-    bgColor: "bg-violet-500/10",
-    href: "/image",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-600",
-    bgColor: "bg-violet-500/10",
-    href: "/video",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-400",
-    bgColor: "bg-violet-500/10",
-    href: "/music"
-  },
-  {
-    label: "Code Generation",
-    icon: Code,
-    color: "text-red-700",
-    bgColor: "bg-violet-500/10",
-    href: "/code",
-  },
-]
+import { tools } from "@/constants";
+
+
 
 
 export default function DashboardPage() {

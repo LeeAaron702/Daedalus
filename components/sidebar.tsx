@@ -12,49 +12,52 @@ const monsterrat = Montserrat({ weight: "600", subsets: ["latin"] });
 import {usePathname} from "next/navigation";
 import { FreeCounter } from "./free-counter";
 
-const routes = [
-  {
-    label: "Dashboard",
-    icon: LayoutDashboard,
-    href: "/dashboard",
-    color: "text-sky-500",
-  },
-  {
-    label: "Conversation",
-    icon: MessageSquare,
-    href: "/conversation",
-    color: "text-teal-300",
-  },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    href: "/image",
-    color: "text-blue-500",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    href: "/video",
-    color: "text-orange-600",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    href: "/music",
-    color: "text-emerald-400",
-  },
-  {
-    label: "Code Generation",
-    icon: Code,
-    href: "/code",
-    color: "text-red-700",
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
-  },
-];
+import { tools as routes } from "@/constants";
+
+
+// const routes = [
+//   {
+//     label: "Dashboard",
+//     icon: LayoutDashboard,
+//     href: "/dashboard",
+//     color: "text-sky-500",
+//   },
+//   {
+//     label: "Conversation",
+//     icon: MessageSquare,
+//     href: "/conversation",
+//     color: "text-teal-300",
+//   },
+//   {
+//     label: "Image Generation",
+//     icon: ImageIcon,
+//     href: "/image",
+//     color: "text-blue-500",
+//   },
+//   {
+//     label: "Video Generation",
+//     icon: VideoIcon,
+//     href: "/video",
+//     color: "text-orange-600",
+//   },
+//   {
+//     label: "Music Generation",
+//     icon: Music,
+//     href: "/music",
+//     color: "text-emerald-400",
+//   },
+//   {
+//     label: "Code Generation",
+//     icon: Code,
+//     href: "/code",
+//     color: "text-red-700",
+//   },
+//   {
+//     label: "Settings",
+//     icon: Settings,
+//     href: "/settings",
+//   },
+// ];
 
 interface SidebarProps {
   apiLimitCount: number;
