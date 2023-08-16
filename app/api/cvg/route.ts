@@ -80,11 +80,12 @@ Sincerely,
       await increaseApiLimit();
     }
     
-    // if (!response.data || !response.data.choices || !response.data.choices[0] || !response.data.choices[0].text) {
-    //   throw new Error("Invalid response from OpenAI");
-    // }
+    if (!response.data || !response.data.choices || response.data.choices.length === 0 || !response.data.choices[0].message) {
+      throw new Error("Invalid response from OpenAI");
+    }
     
     const coverLetter = response.data.choices[0].message.content;
+    
 
 
     return NextResponse.json({ coverLetter });
