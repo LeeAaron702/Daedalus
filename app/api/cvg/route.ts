@@ -38,31 +38,38 @@ export async function POST(req: Request) {
     }
 
     // Construct a prompt for OpenAI to generate a tailored cover letter.
-    const prompt = `
+
+    const completeCoverLetterPrompt = `You are a cover letter generator.
+    You will be given a job description along with the job applicant's resume.
     Given the resume details and the job description, generate a 3-paragraph cover letter suitable for a job application. 
-    Carefully review the resume and timelines on the resume. When writing the cover letter you must only include what is on the resume and you cannot make up information or create assumptions
-    that is not on the resume.
+    You will write a cover letter for the applicant that matches their past experiences from the resume with the job description. Write the cover letter in the same language as the job description provided!
+    Rather than simply outlining the applicant's past experiences, you will give more detail and explain how those experiences will help the applicant succeed in the new job.
+    You will write the cover letter in a modern, professional style without being too formal, as a modern employee might do naturally.`;
 
-Resume:
-${resume}
+//     const prompt = `
+//     Carefully review the resume and timelines on the resume. When writing the cover letter you must only include what is on the resume and you cannot make up information or create assumptions
+//     that is not on the resume.
 
-Job Description:
-${jobDescription}
+// Resume:
+// ${resume}
 
----
+// Job Description:
+// ${jobDescription}
 
-Dear Hiring Manager
+// ---
 
-[Paragraph 1: Introduction and expressing interest in the position.]
+// Dear Hiring Manager
 
-[Paragraph 2: Highlighting specific qualifications from the resume that match the job description and why they make you a great fit for the job.]
+// [Paragraph 1: Introduction and expressing interest in the position.]
 
-[Paragraph 3: Expressing enthusiasm, any additional relevant information, and closing remarks.]
+// [Paragraph 2: Highlighting specific qualifications from the resume that match the job description and why they make you a great fit for the job.]
 
-Sincerely,
-[Your Name]
+// [Paragraph 3: Expressing enthusiasm, any additional relevant information, and closing remarks.]
 
-`;
+// Sincerely,
+// [Your Name]
+
+// `;
 
     // const response = await openai.createCompletion({
     //   model: "text-davinci-003",
@@ -71,7 +78,16 @@ Sincerely,
     //   temperature: .8,
     // });
     const response = await openai.createChatCompletion({
-      messages: [{ role: "system", content: prompt }],
+      messages: [
+        { 
+          role: "system", 
+        content: completeCoverLetterPrompt,
+       },
+       {
+        role: 'user',
+        content: `My Resume: ${resume}. Job Description: ${jobDescription}. Please limit it to 3 paragraphs.`,
+      },
+      ],
       model: "gpt-4",
     });
   

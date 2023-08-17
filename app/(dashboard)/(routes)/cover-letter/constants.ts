@@ -6,5 +6,5 @@ export const formSchema = z.object({
     }),
     jobDescription: z.string().min(1, {
         message: "Job Description is required"
-    }),
+    })
 });
