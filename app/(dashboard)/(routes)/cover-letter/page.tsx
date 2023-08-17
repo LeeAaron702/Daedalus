@@ -68,7 +68,6 @@ const ConverLetterGeneratorPage = () => {
 
   const handleReset = () => {
     form.reset({
-      resume: "",
       jobDescription: "",
     });
     setGeneratedCoverLetter("");
