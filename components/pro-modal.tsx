@@ -12,7 +12,7 @@ import {
   DialogTitle,
 } from "./ui/dialog";
 import { Badge } from "./ui/badge";
-import { Check, Code, ImageIcon, MessageSquare, Music, VideoIcon, Zap } from "lucide-react";
+import { BookOpen, Check, Code, ImageIcon, MailQuestion, MessageSquare, Music, VideoIcon, Zap } from "lucide-react";
 import { Card } from "./ui/card";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
@@ -27,15 +27,21 @@ const tools = [
     bgColor: "bg-violet-500/10",
   },
   {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-blue-500",
+    label: "Code Generation",
+    icon: Code,
+    color: "text-red-700",
     bgColor: "bg-violet-500/10",
   },
   {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-600",
+    label: 'Cover Letter Generator',
+    icon: MailQuestion,
+    color: "text-blue-600",
+    bgColor: "bg-blue-700/10",
+  },
+  {
+    label: "Image Generation",
+    icon: ImageIcon,
+    color: "text-blue-500",
     bgColor: "bg-violet-500/10",
   },
   {
@@ -45,10 +51,16 @@ const tools = [
     bgColor: "bg-violet-500/10",
   },
   {
-    label: "Code Generation",
-    icon: Code,
-    color: "text-red-700",
+    label: "Video Generation",
+    icon: VideoIcon,
+    color: "text-orange-600",
     bgColor: "bg-violet-500/10",
+  },
+  {
+    label: "Recipe Generation",
+    icon: BookOpen,
+    color: "text-yellow-700",
+    bgColor: "bg-orange-700/10",
   },
 ];
 

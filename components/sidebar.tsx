@@ -58,12 +58,12 @@ const routes = [
     href: "/video",
     color: "text-orange-600",
   },
-  // {
-  //   label: 'Recipe Generation',
-  //   icon: BookOpen,
-  //   color: "text-yellow-700",
-  //   href: '/recipe',
-  // },
+  {
+    label: 'Recipe Generation',
+    icon: BookOpen,
+    color: "text-yellow-700",
+    href: '/recipe',
+  },
   // {
   //   label: 'Anime Generation',
   //   icon: PencilRuler,
@@ -88,11 +88,11 @@ const routes = [
   //   color: "text-gray-700",
   //   href: '/speech-to-text',
   // },
-  // {
-  //   label: "Settings",
-  //   icon: Settings,
-  //   href: "/settings",
-  // },
+  {
+    label: "Settings",
+    icon: Settings,
+    href: "/settings",
+  },
   
 ];
 

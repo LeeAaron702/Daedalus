@@ -31,10 +31,15 @@ add this on about page
 <a target="_blank" href="https://icons8.com/icon/2010/thor-hammer">Thor Hammer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
-primsa is used to track subscriptions?
+primsa is used to track subscriptions and usage count (locally?). It is the ORM
+
+npx prisma db push to update prisma db then npx prisma generate for typescript stuff
+
+npx prisma studio
+
 Projects\SaaS AI Platform\ai-saas> npx prisma generate
 
-planetscale for MySQL platform
+planetscale for MySQL platform is what i think is hosting the sql database
 
 
 zustand ?
